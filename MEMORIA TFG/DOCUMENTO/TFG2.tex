@@ -1,0 +1,252 @@
+\documentclass[11pt, a4paper]{article} %tamaño mínimo de letra 11pto.
+
+       
+\usepackage[spanish,activeacute]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[square,numbers,round]{natbib}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{titling}
+\usepackage{subcaption}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{listings}
+\usepackage{multirow}
+\usepackage{plain}
+\usepackage{vmargin}
+\usepackage{url}
+
+
+
+\setmargins{2.5cm}{1.5cm}{16.5cm}{23.42cm}{10pt}{1cm}{0pt}{2cm}
+
+
+\begin{document}
+
+
+\begin{titlepage}
+	
+	\vspace*{0.8 cm}	
+	
+    \centering
+	
+	{\huge \textbf{Algoritmos de aprendizaje automático aplicados a problemas de Ciberseguridad}\par}
+    
+	\vfill
+	\vfill 
+    
+    {\LARGE \textsc{TRABAJO DE FIN DE GRADO}\par}
+    
+    \vspace*{0.2 cm}	 
+    
+    {\Large Curso 2023/2024\par}
+    
+    \vfill
+    \vfill 
+    	\vfill  
+	
+    \includegraphics[width=0.3\textwidth]{logo_UCM.png}\par
+	
+	\vfill  
+    
+    {\Large \textsc{\textbf{UNIVERSIDAD COMPLUTENSE}}\par}
+    {\Large \textsc{\textbf{MADRID}}\par}
+    
+    %%%{\LARGE \textsc{\textbf{UNIVERSIDAD COMPLUTENSE DE MADRID}}\par}
+    
+	\vfill   
+	\vfill 
+	\vfill  
+	\vfill 
+    
+    {\Large FACULTAD DE CIENCIAS MATEMÁTICAS \par}
+    
+    {\Large GRADO EN MATEMÁTICAS \par}
+    
+    \vfill
+	\vfill
+	\vfill 
+	\vfill 
+    
+
+    \begin{minipage}{0.75\textwidth}
+        \begin{flushleft}
+            {\Large Pablo Jiménez Poyatos}
+        \end{flushleft}
+    \end{minipage}
+    
+    \vfill
+    
+    
+    \begin{minipage}{0.75\textwidth}
+        \begin{flushleft}
+            {\Large Luis Fernando Llana Díaz}
+        \end{flushleft}
+    \end{minipage}
+
+    \vfill
+    \vfill
+    \vfill 
+
+	\begin{minipage}{0.75\textwidth}
+    	    \begin{flushright}
+    	    		{\Large Madrid, 10 de junio de 2024}  
+		\end{flushright}        	           
+	\end{minipage}     
+     
+    
+\end{titlepage}
+
+
+
+\begin{titlepage}
+\centering
+{ \bfseries \Large UNIVERSIDAD COMPLUTENSE DE MADRID}
+\vspace{0.5cm}
+
+{\bfseries  \Large FACULTAD DE CIENCIAS FÍSICAS} 
+\vspace{1cm}
+
+{\large DEPARTAMENTO DE XXXXX}
+\vspace{0.8cm}
+
+%%%%Logo Complutense%%%%%
+{\includegraphics[width=0.35\textwidth]{logo_UCM}} %Para ajustar la portada a una sola página se puede reducir el tamaño del logo
+\vspace{0.8cm}
+
+{\bfseries \Large TRABAJO DE FIN DE GRADO}
+\vspace{2cm}
+
+{\Large Código de TFG:  [C\'odigo TFG] } \vspace{5mm}
+
+{\Large [Título de TFG (exactamente el que aparece en la FICHA)]}\vspace{5mm}
+
+{\Large [Título de TFG en ingl\'es (el que aparece en la FICHA)]}\vspace{5mm}
+
+{\Large Supervisor/es: [Nombre del/os supervisores]}\vspace{20mm} 
+
+{\bfseries \LARGE [Nombre del alumno]}\vspace{5mm} 
+
+{\large Grado en Física}\vspace{5mm} 
+
+{\large Curso acad\'emico 20[XX-XX]}\vspace{5mm} 
+
+{\large Convocatoria XXXX}\vspace{5mm} 
+
+\end{titlepage}
+
+
+
+
+\begin{titlepage}
+    \centering
+    \vspace*{1.7cm}
+    \includegraphics[width=0.3\textwidth]{logo_UCM.png}\par
+    \vspace{1cm}
+
+    {\LARGE \textsc{Universidad Complutense de Madrid}\par}
+    \vspace{0.5cm}
+    {\large Facultad de Ciencias Matemáticas\par}
+    \vspace{0.5cm}
+    {\large Grado en Matemáticas\par}
+    \vfill
+
+    {\LARGE \textbf{Algoritmos de Aprendizaje Automático Aplicados a Problemas de Ciberseguridad}\par}
+    \vspace{1.3cm}
+    {\LARGE \textsc{Trabajo Fin de Grado}\par}
+    \vspace{1.1cm}
+    {\Large Curso 2023/2024\par}
+    \vfill
+
+    \begin{minipage}{0.9\textwidth}
+        \begin{flushleft}
+            Pablo Jiménez Poyatos
+        \end{flushleft}
+    \end{minipage}
+    
+    \vspace{0.5cm}
+    
+    \begin{minipage}{0.9\textwidth}
+        \begin{flushleft}
+            Luis Fernando Llana Díaz
+        \end{flushleft}
+    \end{minipage}
+
+    \vfill
+    \vfill
+    \vfill
+
+	\begin{flushright}
+            Madrid, 10 de junio de 2024
+    \end{flushright}
+    
+\end{titlepage}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+
+{\bfseries \large [Título extendido del TFG (si procede)] }\vspace{10mm} 
+
+
+
+
+
+\nocite{*}
+
+
+
+
+{\bfseries \large Resumen:} \vspace{5mm}
+
+Esto es una prueba para probar el formato del Resumen. Esto es una prueba para probar el formato del ResumenEsto es una prueba para probar el formato del ResumenEsto es una prueba para probar el formato del ResumenEsto es una prueba para probar el formato del ResumenEsto es una prueba para probar el formato del ResumenEsto es una prueba para probar el formato del ResumenEsto es una prueba para probar el formato del ResumenEsto es una prueba para probar el formato del ResumenEsto es una prueba para probar el formato del ResumenEsto es una prueba para probar el formato del ResumenEsto es una prueba para probar el formato del ResumenEsto es una prueba para probar el formato del ResumenEsto es una prueba para probar el formato del ResumenEsto es una prueba para probar el formato del Resumen.
+\vspace{1cm}
+
+{\bfseries \large Abstract: }\vspace{5mm} 
+
+This is a test to prove the abstract's layout.This is a test to prove the abstract's layout.This is a test to prove the abstract's layout.This is a test to prove the abstract's layout.This is a test to prove the abstract's layout.This is a test to prove the abstract's layout.This is a test to prove the abstract's layout.This is a test to prove the abstract's layout.This is a test to prove the abstract's layout.This is a test to prove the abstract's layout.This is a test to prove the abstract's layout.This is a test to prove the abstract's layout.This is a test to prove the abstract's layout.This is a test to prove the abstract's layout.This is a test to prove the abstract's layout.This is a test to prove the abstract's layout.This is a test to prove the abstract's layout.This is a test to prove the abstract's layout.This is a test to prove the abstract's layout.
+\vspace{1cm}
+
+%%Comentar estas notas para que no salgan en la memoria
+{\Large\textbf{Nota: el título extendido (si procede), el resumen y el abstract deben estar en una misma página y su extensión no debe superar una página. Tamaño mínimo 11pto.}}
+\vspace{1cm}
+
+{\Large\textbf{Extensión máxima 20 páginas sin contar portada ni resumen (sí se incluye índice, introducción, conclusiones y bibliografía}}
+\newpage
+
+%%Inicio:
+
+\bibliographystyle{unsrtnat} % Elige el estilo de citación que desees
+\bibliography{bibliografia}    % Reemplaza 'bibliografia' con el nombre de tu archivo .bib
+
+
+
+
+\end{document}

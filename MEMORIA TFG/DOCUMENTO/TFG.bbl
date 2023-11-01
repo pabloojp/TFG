@@ -1,0 +1,69 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bishop(1995)]{bishop1995neural}
+Christopher~M Bishop.
+\newblock \emph{Neural networks for pattern recognition}.
+\newblock Oxford university press, 1995.
+
+\bibitem[Yagual et~al.(2022)Yagual, Yagual, and Su{\'a}rez]{yagual2022revision}
+Daniel Ivan~Quirumbay Yagual, Carlos~Castillo Yagual, and Ivan~Coronel
+  Su{\'a}rez.
+\newblock Una revisi{\'o}n del aprendizaje profundo aplicado a la
+  ciberseguridad.
+\newblock \emph{Revista Cient{\'\i}fica y Tecnol{\'o}gica UPSE}, 9\penalty0
+  (1):\penalty0 57--65, 2022.
+
+\bibitem[Xin et~al.(2018)Xin, Kong, Liu, Chen, Li, Zhu, Gao, Hou, and
+  Wang]{xin2018machine}
+Yang Xin, Lingshuang Kong, Zhi Liu, Yuling Chen, Yanmiao Li, Hongliang Zhu,
+  Mingcheng Gao, Haixia Hou, and Chunhua Wang.
+\newblock Machine learning and deep learning methods for cybersecurity.
+\newblock \emph{Ieee access}, 6:\penalty0 35365--35381, 2018.
+
+\bibitem[Sarker et~al.(2020)Sarker, Kayes, Badsha, Alqahtani, Watters, and
+  Ng]{sarker2020cybersecurity}
+Iqbal~H Sarker, ASM Kayes, Shahriar Badsha, Hamed Alqahtani, Paul Watters, and
+  Alex Ng.
+\newblock Cybersecurity data science: an overview from machine learning
+  perspective.
+\newblock \emph{Journal of Big data}, 7:\penalty0 1--29, 2020.
+
+\bibitem[Tang et~al.(2007)Tang, Tan, and Yi]{tang2007neural}
+Huajin Tang, Kay~Chen Tan, and Zhang Yi.
+\newblock \emph{Neural networks: computational models and applications},
+  volume~53.
+\newblock Springer Science \& Business Media, 2007.
+
+\bibitem[Bengio et~al.(2017)Bengio, Goodfellow, and Courville]{bengio2017deep}
+Yoshua Bengio, Ian Goodfellow, and Aaron Courville.
+\newblock \emph{Deep learning}, volume~1.
+\newblock MIT press Cambridge, MA, USA, 2017.
+
+\bibitem[Pajares~Martinsanz et~al.(2021)]{pajares2021aprendizaje}
+Gonzalo Pajares~Martinsanz et~al.
+\newblock Aprendizaje profundo.
+\newblock 2021.
+
+\bibitem[Mirjalili and Raschka(2020)]{mirjalili2020python}
+Vahid Mirjalili and Sebastian Raschka.
+\newblock \emph{Python machine learning}.
+\newblock Marcombo, 2020.
+
+\bibitem[Silaparasetty and Silaparasetty(2020)]{silaparasetty2020neural}
+Vinita Silaparasetty and Vinita Silaparasetty.
+\newblock Neural network collection.
+\newblock \emph{Deep Learning Projects Using TensorFlow 2: Neural Network
+  Development with Python and Keras}, pages 249--347, 2020.
+
+\bibitem[DATAI((Acceded on 18 October))]{kaggle_cnn_tutorial}
+DATAI.
+\newblock Convolutional neural network (cnn) tutorial, (Acceded on 18 October).
+\newblock URL
+  \url{https://www.kaggle.com/code/kanncaa1/convolutional-neural-network-cnn-tutorial}.
+
+\end{thebibliography}
