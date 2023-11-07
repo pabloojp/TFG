@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{11}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -65,5 +65,12 @@ DATAI.
 \newblock Convolutional neural network (cnn) tutorial, (Acceded on 18 October).
 \newblock URL
   \url{https://www.kaggle.com/code/kanncaa1/convolutional-neural-network-cnn-tutorial}.
+
+\bibitem[Fernandez((Acceded on 30 October))]{conceptos_RN_DesdeCero}
+Ander Fernandez.
+\newblock Como programar una red neuronal desde 0 en python, (Acceded on 30
+  October).
+\newblock URL
+  \url{https://anderfernandez.com/blog/como-programar-una-red-neuronal-desde-0-en-python/}.
 
 \end{thebibliography}
