@@ -1,14 +1,9 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[Bishop(1995)]{bishop1995neural}
-Christopher~M Bishop.
-\newblock \emph{Neural networks for pattern recognition}.
-\newblock Oxford university press, 1995.
 
 \bibitem[Yagual et~al.(2022)Yagual, Yagual, and Su{\'a}rez]{yagual2022revision}
 Daniel Ivan~Quirumbay Yagual, Carlos~Castillo Yagual, and Ivan~Coronel
@@ -18,12 +13,82 @@ Daniel Ivan~Quirumbay Yagual, Carlos~Castillo Yagual, and Ivan~Coronel
 \newblock \emph{Revista Cient{\'\i}fica y Tecnol{\'o}gica UPSE}, 9\penalty0
   (1):\penalty0 57--65, 2022.
 
+\bibitem[Alfaries et~al.(2019)Alfaries, Mengash, Yasar, and
+  Shakshuki]{alfaries2019advances}
+Auhood Alfaries, Hanan Mengash, Ansar Yasar, and Elhadi Shakshuki.
+\newblock \emph{Advances in Data Science, Cyber Security and IT Applications:
+  First International Conference on Computing, ICC 2019, Riyadh, Saudi Arabia,
+  December 10--12, 2019, Proceedings, Part II}, volume 1098.
+\newblock Springer Nature, 2019.
+
+\bibitem[Stamp et~al.(2022)Stamp, Visaggio, Mercaldo, and
+  Di~Troia]{stamp2022artificial}
+Mark Stamp, Corrado~Aaron Visaggio, Francesco Mercaldo, and Fabio Di~Troia.
+\newblock \emph{Artificial Intelligence for Cybersecurity}.
+\newblock Springer, 2022.
+
+\bibitem[Omar(2022)]{omar2022machine}
+Marwan Omar.
+\newblock \emph{Machine Learning for Cybersecurity: Innovative Deep Learning
+  Solutions}.
+\newblock Springer Nature, 2022.
+
+\bibitem[Xu et~al.(2023)Xu, Yan, Teng, Cai, and Li]{xu2023machine}
+Yuan Xu, Hongyang Yan, Huang Teng, Jun Cai, and Jin Li.
+\newblock \emph{Machine Learning for Cyber Security: 4th International
+  Conference, ML4CS 2022, Guangzhou, China, December 2--4, 2022, Proceedings,
+  Part II}, volume 13656.
+\newblock Springer Nature, 2023.
+
+\bibitem[Haber et~al.(2017)Haber, Lampoltshammer, and Mayr]{haber2017data}
+Peter Haber, Thomas Lampoltshammer, and Manfred Mayr.
+\newblock \emph{Data science--Analytics and applications}.
+\newblock Springer, 2017.
+
+\bibitem[Kim et~al.(2018)Kim, Aminanto, and Tanuwidjaja]{kim2018network}
+Kwangjo Kim, Muhamad~Erza Aminanto, and Harry~Chandra Tanuwidjaja.
+\newblock \emph{Network intrusion detection using deep learning: a feature
+  learning approach}.
+\newblock Springer, 2018.
+
+\bibitem[Parisi(2019)]{parisi2019hands}
+Alessandro Parisi.
+\newblock \emph{Hands-On Artificial Intelligence for Cybersecurity: Implement
+  smart AI systems for preventing cyber attacks and detecting threats and
+  network anomalies}.
+\newblock Packt Publishing Ltd, 2019.
+
+\bibitem[Olabe(1998)]{olabe1998redes}
+Xabier~Basogain Olabe.
+\newblock Redes neuronales artificiales y sus aplicaciones.
+\newblock \emph{Publicaciones de la Escuela de Ingenieros}, 1998.
+
 \bibitem[Xin et~al.(2018)Xin, Kong, Liu, Chen, Li, Zhu, Gao, Hou, and
   Wang]{xin2018machine}
 Yang Xin, Lingshuang Kong, Zhi Liu, Yuling Chen, Yanmiao Li, Hongliang Zhu,
   Mingcheng Gao, Haixia Hou, and Chunhua Wang.
 \newblock Machine learning and deep learning methods for cybersecurity.
 \newblock \emph{Ieee access}, 6:\penalty0 35365--35381, 2018.
+
+\bibitem[Matich(2001)]{matich2001redes}
+Dami{\'a}n~Jorge Matich.
+\newblock Redes neuronales: Conceptos b{\'a}sicos y aplicaciones.
+\newblock \emph{Universidad Tecnol{\'o}gica Nacional, M{\'e}xico}, 41:\penalty0
+  12--16, 2001.
+
+\bibitem[Mart{\'\i}nez~Torres et~al.(2019)Mart{\'\i}nez~Torres,
+  Iglesias~Comesa{\~n}a, and Garc{\'\i}a-Nieto]{martinez2019machine}
+Javier Mart{\'\i}nez~Torres, Carla Iglesias~Comesa{\~n}a, and Paulino~J
+  Garc{\'\i}a-Nieto.
+\newblock Machine learning techniques applied to cybersecurity.
+\newblock \emph{International Journal of Machine Learning and Cybernetics},
+  10:\penalty0 2823--2836, 2019.
+
+\bibitem[Sarker(2022)]{sarker2022machine}
+Iqbal~H Sarker.
+\newblock Machine learning for intelligent data analysis and automation in
+  cybersecurity: current and future prospects.
+\newblock \emph{Annals of Data Science}, pages 1--26, 2022.
 
 \bibitem[Sarker et~al.(2020)Sarker, Kayes, Badsha, Alqahtani, Watters, and
   Ng]{sarker2020cybersecurity}
@@ -32,12 +97,6 @@ Iqbal~H Sarker, ASM Kayes, Shahriar Badsha, Hamed Alqahtani, Paul Watters, and
 \newblock Cybersecurity data science: an overview from machine learning
   perspective.
 \newblock \emph{Journal of Big data}, 7:\penalty0 1--29, 2020.
-
-\bibitem[Tang et~al.(2007)Tang, Tan, and Yi]{tang2007neural}
-Huajin Tang, Kay~Chen Tan, and Zhang Yi.
-\newblock \emph{Neural networks: computational models and applications},
-  volume~53.
-\newblock Springer Science \& Business Media, 2007.
 
 \bibitem[Bengio et~al.(2017)Bengio, Goodfellow, and Courville]{bengio2017deep}
 Yoshua Bengio, Ian Goodfellow, and Aaron Courville.
@@ -54,11 +113,21 @@ Vahid Mirjalili and Sebastian Raschka.
 \newblock \emph{Python machine learning}.
 \newblock Marcombo, 2020.
 
+\bibitem[Chollet(2021)]{chollet2021deep}
+Francois Chollet.
+\newblock \emph{Deep learning with Python}.
+\newblock Simon and Schuster, 2021.
+
 \bibitem[Silaparasetty and Silaparasetty(2020)]{silaparasetty2020neural}
 Vinita Silaparasetty and Vinita Silaparasetty.
 \newblock Neural network collection.
 \newblock \emph{Deep Learning Projects Using TensorFlow 2: Neural Network
   Development with Python and Keras}, pages 249--347, 2020.
+
+\bibitem[Bishop(1995)]{bishop1995neural}
+Christopher~M Bishop.
+\newblock \emph{Neural networks for pattern recognition}.
+\newblock Oxford university press, 1995.
 
 \bibitem[DATAI((Acceded on 18 October))]{kaggle_cnn_tutorial}
 DATAI.
@@ -72,5 +141,11 @@ Ander Fernandez.
   October).
 \newblock URL
   \url{https://anderfernandez.com/blog/como-programar-una-red-neuronal-desde-0-en-python/}.
+
+\bibitem[Tang et~al.(2007)Tang, Tan, and Yi]{tang2007neural}
+Huajin Tang, Kay~Chen Tan, and Zhang Yi.
+\newblock \emph{Neural networks: computational models and applications},
+  volume~53.
+\newblock Springer Science \& Business Media, 2007.
 
 \end{thebibliography}

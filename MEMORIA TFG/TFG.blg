@@ -5,50 +5,55 @@ Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: unsrtnat.bst
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliografia.bib
+Repeated entry---line 82 of file bibliografia.bib
+ : @article{xin2018machine
+ :                        ,
+I'm skipping whatever remains of this entry
 Warning--entry type for "kaggle_cnn_tutorial" isn't style-file defined
---line 84 of file bibliografia.bib
+--line 188 of file bibliografia.bib
 Warning--entry type for "conceptos_RN_DesdeCero" isn't style-file defined
---line 91 of file bibliografia.bib
+--line 195 of file bibliografia.bib
+Warning--I didn't find a database entry for "raschka2019python"
 Warning--empty journal in pajares2021aprendizaje
-You've used 11 entries,
+You've used 23 entries,
             2481 wiz_defined-function locations,
-            615 strings with 6299 characters,
-and the built_in function-call counts, 3993 in all, are:
-= -- 313
-> -- 225
-< -- 9
-+ -- 88
-- -- 66
-* -- 286
-:= -- 650
-add.period$ -- 33
-call.type$ -- 11
-change.case$ -- 18
-chr.to.int$ -- 11
-cite$ -- 12
-duplicate$ -- 207
-empty$ -- 363
-format.name$ -- 82
-if$ -- 840
+            669 strings with 8312 characters,
+and the built_in function-call counts, 7874 in all, are:
+= -- 614
+> -- 417
+< -- 18
++ -- 168
+- -- 122
+* -- 542
+:= -- 1287
+add.period$ -- 69
+call.type$ -- 23
+change.case$ -- 34
+chr.to.int$ -- 23
+cite$ -- 24
+duplicate$ -- 439
+empty$ -- 743
+format.name$ -- 150
+if$ -- 1663
 int.to.chr$ -- 1
-int.to.str$ -- 12
-missing$ -- 13
-newline$ -- 63
-num.names$ -- 33
-pop$ -- 111
+int.to.str$ -- 24
+missing$ -- 33
+newline$ -- 123
+num.names$ -- 69
+pop$ -- 237
 preamble$ -- 1
-purify$ -- 11
+purify$ -- 23
 quote$ -- 0
-skip$ -- 132
+skip$ -- 258
 stack$ -- 0
-substring$ -- 126
-swap$ -- 32
-text.length$ -- 3
+substring$ -- 219
+swap$ -- 63
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 65
+type$ -- 125
 warning$ -- 1
-while$ -- 31
+while$ -- 62
 width$ -- 0
-write$ -- 144
-(There were 3 warnings)
+write$ -- 293
+(There was 1 error message)

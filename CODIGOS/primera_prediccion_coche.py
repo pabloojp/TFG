@@ -1,3 +1,27 @@
+'''
+Vamos a crear una red neuronal que conduzca un coche de juguete Arduino que más 
+adelante construiremos y veremos en el “mundo real”.
+
+Nuestros datos de entrada serán:
+
+Sensor de distancia al obstáculo
+si es 0 no hay obstáculos a la vista
+si es 0,5 se acerca a un obstáculo
+si es 1 está demasiado cerca de un obstáculo
+
+Posición del obstáculo (izquierda,derecha)
+El obstáculo es visto a la izquierda será -1
+visto a la derecha será 1
+Las salidas serán
+
+Girar
+derecha 1 / izquierda -1
+Dirección
+avanzar 1 / retroceder -1
+'''
+
+
+
 import numpy as np
 
 def sigmoid(x):

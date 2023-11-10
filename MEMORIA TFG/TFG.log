@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.21)  7 NOV 2023 22:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.21)  9 NOV 2023 12:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -466,7 +466,7 @@ Package hyperref Info: Link coloring ON on input line 27.
 \openout3 = `TFG.out'.
 
 \c@lstlisting=\count298
-<logo_UCM.png, id=3, 145.5036pt x 169.5936pt>
+<logo_UCM.png, id=35, 145.5036pt x 169.5936pt>
 File: logo_UCM.png Graphic file (type png)
 <use logo_UCM.png>
 Package pdftex.def Info: logo_UCM.png  used on input line 49.
@@ -486,64 +486,65 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.131 \newpage
-               [1] (TFG.bbl
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
-7.
+               [1] [2] [3] [4] (TFG.bbl [5] [6]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+36.
 
 (C:\Users\pjime\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 64--68
+Underfull \hbox (badness 10000) in paragraph at lines 133--137
 []\T1/cmr/m/n/10.95 DATAI.  Con-vo-lu-tio-nal neu-ral net-work (cnn) tu-to-rial
 , (Ac-ce-ded
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--68
+Underfull \hbox (badness 10000) in paragraph at lines 133--137
 \T1/cmr/m/n/10.95 on 18 Oc-to-ber).  URL [][]$\T1/cmtt/m/n/10.95 https : / / ww
 w . kaggle . com / code / kanncaa1 /
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 70--75
+Underfull \hbox (badness 1776) in paragraph at lines 139--144
 []\T1/cmr/m/n/10.95 Ander Fer-nan-dez.  Co-mo pro-gra-mar una red neu-ro-nal de
 s-de 0 en python,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--75
+Underfull \hbox (badness 10000) in paragraph at lines 139--144
 \T1/cmr/m/n/10.95 (Ac-ce-ded on 30 Oc-to-ber).  URL [][]$\T1/cmtt/m/n/10.95 htt
 ps : / / anderfernandez . com / blog /
  []
 
-) [2] (TFG.aux
+) [7] (TFG.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
 Package rerunfilecheck Info: File `TFG.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: ABB249E924ECFDE2BC980F47F41280D3;871.
  ) 
 Here is how much of TeX's memory you used:
- 14041 strings out of 475385
- 228988 string characters out of 2776906
- 583513 words of memory out of 3000000
- 35230 multiletter control sequences out of 15000+600000
- 480457 words of font info for 49 fonts, out of 8000000 for 9000
+ 14128 strings out of 475385
+ 230509 string characters out of 2776906
+ 587096 words of memory out of 3000000
+ 35286 multiletter control sequences out of 15000+600000
+ 481562 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,5n,77p,907b,491s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 72i,6n,77p,1124b,606s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\pjime\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
 1095.pk> <C:\Users\pjime\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\ecti1095.pk> <C:\Users\pjime\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecbx1440.pk> <C:\Users\pjime\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecrm1095.pk> <C:\Users\pjime\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\pjime\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecxc1440.pk> <C:\Users\pjime\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\pjime\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1728.pk> <C:\Users\pjime\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk>
-Output written on TFG.pdf (3 pages, 264965 bytes).
+/dpi600\tcrm1095.pk> <C:\Users\pjime\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecbx1440.pk> <C:\Users\pjime\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\pjime\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\pjime\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecxc1440.pk> <C:\Users\pjime\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\pjime\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1728.pk> <C:\Users\pjime\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk>
+Output written on TFG.pdf (8 pages, 301511 bytes).
 PDF statistics:
- 381 PDF objects out of 1000 (max. 8388607)
- 15 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 515 PDF objects out of 1000 (max. 8388607)
+ 44 named destinations out of 1000 (max. 500000)
+ 70 words of extra memory for PDF output out of 10000 (max. 10000000)
 
