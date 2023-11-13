@@ -157,7 +157,7 @@ model.summary()
 
 # Training the Model
 with tf.device('/GPU:0'):
-    epochs = 2
+    epochs = 1
     model.fit(X_train, y_train, batch_size=32, epochs=epochs, validation_data=(X_test, y_test))
 
 
