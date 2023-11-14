@@ -1,18 +1,11 @@
 """
-Nombre del codigo: Modelo CNN reconocimiento de dígitos usando dataset MNIST.
-Guiado por: Tutorial de Kaggle (acceso al enlace el 10 de noviembre)
-        https://www.kaggle.com/code/yassineghouzam/introduction-to-cnn-keras-0-997-top-6/notebook
+Nombre del codigo: Prediccion señal de trafico usando el modelo creado. 
 Alumno: Jiménez Poyatos, Pablo
 
-Script solo con el modelo. Nada de representación de datos ni nada. Además el codigo apilado en funciones.
-
-Para crear el modelo, he necesitado instalarme diferentes bibliotecas como numpy, tensorflow, keras, etc.
-
-Además, he tenido que descargarme los datos de entrenamiento y de prueba como archivos CSV y guardarlos en
-la misma carpeta donde estaba este script.
-
-Para predecir el digito que aparece en una imagen, tenemos que cargar la imagen cuyo tamaño sea 28 x 28.
-Si no esta en escala de grises, la convertimos.
+Para predecir la señal que aparece en una imagen, tenemos que cargar el modelo despues de 20 epochs y
+la imagen. Esta última tenemos que pasarla a una imagen con tres canales  y redimensionarla a 30 x 30 pixeles.
+Despues de que mi modelo prediga cual sería su etiqueta, le asignamos su nombre correspondiente del diccionario 
+clases.
 """
 
 from PIL import Image
@@ -22,8 +15,8 @@ from keras.models import load_model
 # Cargar el modelo previamente entrenado
 model = load_model('traffic_classifier.keras')
 
-# Cargar la imagen '41.png'
-image_path = '41.png'
+# Cargar la imagen
+image_path = '14.png'
 image = Image.open(image_path)
 image = image.resize((30, 30))
 image = image.convert('RGB')
@@ -37,54 +30,55 @@ prediction = model.predict(np.array([image]))  # Asegurarse de que sea un arregl
 predicted_class = np.argmax(prediction)
 
 # Crear un diccionario que mapea las clases a sus etiquetas
-classes = { 
-            0:'Speed limit (20km/h)',
-            1:'Speed limit (30km/h)', 
-            2:'Speed limit (50km/h)', 
-            3:'Speed limit (60km/h)', 
-            4:'Speed limit (70km/h)', 
-            5:'Speed limit (80km/h)', 
-            6:'End of speed limit (80km/h)', 
-            7:'Speed limit (100km/h)', 
-            8:'Speed limit (120km/h)', 
-            9:'No passing', 
-            10:'No passing veh over 3.5 tons', 
-            11:'Right-of-way at intersection', 
-            12:'Priority road', 
-            13:'Yield', 
-            14:'Stop', 
-            15:'No vehicles', 
-            16:'Veh > 3.5 tons prohibited',
-            17:'No entry', 
-            18:'General caution', 
-            19:'Dangerous curve left', 
-            20:'Dangerous curve right', 
-            21:'Double curve', 
-            22:'Bumpy road', 
-            23:'Slippery road', 
-            24:'Road narrows on the right', 
-            25:'Road work', 
-            26:'Traffic signals', 
-            27:'Pedestrians', 
-            28:'Children crossing', 
-            29:'Bicycles crossing', 
-            30:'Beware of ice/snow',
-            31:'Wild animals crossing', 
-            32:'End speed + passing limits', 
-            33:'Turn right ahead', 
-            34:'Turn left ahead', 
-            35:'Ahead only', 
-            36:'Go straight or right', 
-            37:'Go straight or left', 
-            38:'Keep right', 
-            39:'Keep left', 
-            40:'Roundabout mandatory', 
-            41:'End of no passing', 
-            42:'End no passing veh > 3.5 tons'
-        }
+clases = { 
+    0: 'Límite de velocidad (20 km/h)',
+    1: 'Límite de velocidad (30 km/h)', 
+    2: 'Límite de velocidad (50 km/h)', 
+    3: 'Límite de velocidad (60 km/h)', 
+    4: 'Límite de velocidad (70 km/h)', 
+    5: 'Límite de velocidad (80 km/h)', 
+    6: 'Fin del límite de velocidad (80 km/h)', 
+    7: 'Límite de velocidad (100 km/h)', 
+    8: 'Límite de velocidad (120 km/h)', 
+    9: 'Prohibido adelantar', 
+    10: 'Prohibido adelantar vehículos de más de 3.5 toneladas', 
+    11: 'Derecho de paso en intersección', 
+    12: 'Carretera con prioridad', 
+    13: 'Ceder el paso', 
+    14: 'Detenerse', 
+    15: 'Prohibido el paso de vehículos', 
+    16: 'Prohibido el paso de vehículos de más de 3.5 toneladas',
+    17: 'Prohibido el acceso', 
+    18: 'Precaución general', 
+    19: 'Curva peligrosa a la izquierda', 
+    20: 'Curva peligrosa a la derecha', 
+    21: 'Curva doble', 
+    22: 'Carretera con baches', 
+    23: 'Carretera resbaladiza', 
+    24: 'Carretera se estrecha a la derecha', 
+    25: 'Trabajo en la carretera', 
+    26: 'Señales de tráfico', 
+    27: 'Peatones', 
+    28: 'Cruce de niños', 
+    29: 'Cruce de bicicletas', 
+    30: 'Precaución: hielo/nieve',
+    31: 'Cruce de animales salvajes', 
+    32: 'Fin de límites de velocidad y adelantamiento', 
+    33: 'Girar a la derecha', 
+    34: 'Girar a la izquierda', 
+    35: 'Solo adelante', 
+    36: 'Ir recto o girar a la derecha', 
+    37: 'Ir recto o girar a la izquierda', 
+    38: 'Mantenerse a la derecha', 
+    39: 'Mantenerse a la izquierda', 
+    40: 'Circulación obligatoria en rotonda', 
+    41: 'Fin de la prohibición de adelantar', 
+    42: 'Fin de la prohibición de adelantar vehículos de más de 3.5 toneladas'
+}
+
 
 # Obtener la etiqueta correspondiente a la clase predicha
-predicted_label = classes[predicted_class]
+predicted_label = clases[predicted_class]
 
 # Imprimir la etiqueta predicha
 print(f'Clase predicha: {predicted_label}')

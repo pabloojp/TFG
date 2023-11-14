@@ -135,22 +135,190 @@ This is a test to prove the abstract's layout.This is a test to prove the abstra
 \citep{parisi2019hands} : INGLES información práctica sobre cómo utilizar sistemas de inteligencia artificial para prevenir ataques cibernéticos, detectar amenazas y anomalías en las redes, y fortalecer la seguridad en el ámbito de la ciberseguridad
 
 
-\section{Páginas web}
-\subsection{Python} 
+\section{Comentarios codigos Python}
+
+\subsection{MNIST}
+
+En el codigo de predecir los digitos MNIST, cuando cargo el modelo me aparece :
+
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (None, 28, 28, 32)        832       
+
+ conv2d_1 (Conv2D)           (None, 28, 28, 32)        25632
+
+ max_pooling2d (MaxPooling2  (None, 14, 14, 32)        0
+ D)
+
+ dropout (Dropout)           (None, 14, 14, 32)        0
+
+ conv2d_2 (Conv2D)           (None, 14, 14, 64)        18496
+
+ conv2d_3 (Conv2D)           (None, 14, 14, 64)        36928
+
+ max_pooling2d_1 (MaxPoolin  (None, 7, 7, 64)          0
+ g2D)
+
+ dropout_1 (Dropout)         (None, 7, 7, 64)          0
+
+ flatten (Flatten)           (None, 3136)              0
+
+ dense (Dense)               (None, 256)               803072
+
+ dropout_2 (Dropout)         (None, 256)               0
+
+ dense_1 (Dense)             (None, 10)                2570
+
+=================================================================
+Total params: 887530 (3.39 MB)
+Trainable params: 887530 (3.39 MB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+Epoch 1/20
+439/439 - 127s - loss: 0.4079 - accuracy: 0.8705 - val_loss: 0.0653 - val_accuracy: 0.9821 - lr: 0.0010 - 127s/epoch - 290ms/step
+Epoch 2/20
+439/439 - 126s - loss: 0.1319 - accuracy: 0.9610 - val_loss: 0.0408 - val_accuracy: 0.9886 - lr: 0.0010 - 126s/epoch - 287ms/step
+Epoch 3/20
+439/439 - 127s - loss: 0.0931 - accuracy: 0.9717 - val_loss: 0.0420 - val_accuracy: 0.9871 - lr: 0.0010 - 127s/epoch - 290ms/step
+Epoch 4/20
+439/439 - 144s - loss: 0.0785 - accuracy: 0.9762 - val_loss: 0.0265 - val_accuracy: 0.9926 - lr: 0.0010 - 144s/epoch - 328ms/step
+Epoch 5/20
+439/439 - 124s - loss: 0.0676 - accuracy: 0.9792 - val_loss: 0.0278 - val_accuracy: 0.9921 - lr: 0.0010 - 124s/epoch - 282ms/step
+Epoch 6/20
+439/439 - 131s - loss: 0.0612 - accuracy: 0.9816 - val_loss: 0.0275 - val_accuracy: 0.9924 - lr: 0.0010 - 131s/epoch - 299ms/step
+Epoch 7/20
+439/439 - 121s - loss: 0.0596 - accuracy: 0.9829 - val_loss: 0.0263 - val_accuracy: 0.9929 - lr: 0.0010 - 121s/epoch - 275ms/step
+Epoch 8/20
+439/439 - 123s - loss: 0.0577 - accuracy: 0.9833 - val_loss: 0.0246 - val_accuracy: 0.9929 - lr: 0.0010 - 123s/epoch - 281ms/step
+Epoch 9/20
+439/439 - 116s - loss: 0.0528 - accuracy: 0.9846 - val_loss: 0.0211 - val_accuracy: 0.9936 - lr: 0.0010 - 116s/epoch - 263ms/step
+Epoch 10/20
+439/439 - 109s - loss: 0.0534 - accuracy: 0.9842 - val_loss: 0.0235 - val_accuracy: 0.9943 - lr: 0.0010 - 109s/epoch - 248ms/step
+Epoch 11/20
+439/439 - 114s - loss: 0.0507 - accuracy: 0.9857 - val_loss: 0.0281 - val_accuracy: 0.9924 - lr: 0.0010 - 114s/epoch - 260ms/step
+Epoch 12/20
+439/439 - 113s - loss: 0.0520 - accuracy: 0.9846 - val_loss: 0.0234 - val_accuracy: 0.9940 - lr: 0.0010 - 113s/epoch - 258ms/step
+Epoch 13/20
+
+Epoch 13: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+439/439 - 109s - loss: 0.0504 - accuracy: 0.9857 - val_loss: 0.0197 - val_accuracy: 0.9936 - lr: 0.0010 - 109s/epoch - 247ms/step
+Epoch 14/20
+439/439 - 107s - loss: 0.0368 - accuracy: 0.9894 - val_loss: 0.0290 - val_accuracy: 0.9938 - lr: 5.0000e-04 - 107s/epoch - 244ms/step
+Epoch 15/20
+439/439 - 107s - loss: 0.0363 - accuracy: 0.9897 - val_loss: 0.0257 - val_accuracy: 0.9938 - lr: 5.0000e-04 - 107s/epoch - 245ms/step
+Epoch 16/20
+439/439 - 111s - loss: 0.0356 - accuracy: 0.9900 - val_loss: 0.0204 - val_accuracy: 0.9950 - lr: 5.0000e-04 - 111s/epoch - 254ms/step
+Epoch 17/20
+439/439 - 111s - loss: 0.0368 - accuracy: 0.9902 - val_loss: 0.0186 - val_accuracy: 0.9948 - lr: 5.0000e-04 - 111s/epoch - 253ms/step
+Epoch 18/20
+439/439 - 113s - loss: 0.0349 - accuracy: 0.9897 - val_loss: 0.0221 - val_accuracy: 0.9940 - lr: 5.0000e-04 - 113s/epoch - 257ms/step
+Epoch 19/20
+
+Epoch 19: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+439/439 - 111s - loss: 0.0348 - accuracy: 0.9907 - val_loss: 0.0200 - val_accuracy: 0.9943 - lr: 5.0000e-04 - 111s/epoch - 254ms/step
+Epoch 20/20
+439/439 - 115s - loss: 0.0304 - accuracy: 0.9909 - val_loss: 0.0187 - val_accuracy: 0.9950 - lr: 2.5000e-04 - 115s/epoch - 262ms/step
+
+\subsection{Traffic sign}
+
+En el codigo de predecir las señales de tráfico, cuando cargo el modelo me aparece :
+
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (None, 26, 26, 32)        2432      
+
+ conv2d_1 (Conv2D)           (None, 22, 22, 32)        25632
+
+ max_pooling2d (MaxPooling2  (None, 11, 11, 32)        0
+ D)
+
+ dropout (Dropout)           (None, 11, 11, 32)        0
+
+ conv2d_2 (Conv2D)           (None, 9, 9, 64)          18496
+
+ conv2d_3 (Conv2D)           (None, 7, 7, 64)          36928
+
+ max_pooling2d_1 (MaxPoolin  (None, 3, 3, 64)          0
+ g2D)
+
+ dropout_1 (Dropout)         (None, 3, 3, 64)          0
+
+ flatten (Flatten)           (None, 576)               0
+
+ dense (Dense)               (None, 256)               147712
+
+ dropout_2 (Dropout)         (None, 256)               0
+
+ dense_1 (Dense)             (None, 43)                11051
+
+=================================================================
+Total params: 242251 (946.29 KB)
+Trainable params: 242251 (946.29 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+Epoch 1/20
+981/981 [==============================] - 67s 67ms/step - loss: 1.8714 - accuracy: 0.5150 - val_loss: 0.4437 - val_accuracy: 0.8787
+Epoch 2/20
+981/981 [==============================] - 70s 71ms/step - loss: 0.6417 - accuracy: 0.8115 - val_loss: 0.1994 - val_accuracy: 0.9463
+Epoch 3/20
+981/981 [==============================] - 70s 71ms/step - loss: 0.4526 - accuracy: 0.8680 - val_loss: 0.1249 - val_accuracy: 0.9697
+Epoch 4/20
+981/981 [==============================] - 69s 70ms/step - loss: 0.3738 - accuracy: 0.8903 - val_loss: 0.0898 - val_accuracy: 0.9759
+Epoch 5/20
+981/981 [==============================] - 70s 71ms/step - loss: 0.3153 - accuracy: 0.9089 - val_loss: 0.1175 - val_accuracy: 0.9651
+Epoch 6/20
+981/981 [==============================] - 71s 72ms/step - loss: 0.2957 - accuracy: 0.9160 - val_loss: 0.0776 - val_accuracy: 0.9795
+Epoch 7/20
+981/981 [==============================] - 71s 72ms/step - loss: 0.2871 - accuracy: 0.9183 - val_loss: 0.1025 - val_accuracy: 0.9746
+Epoch 8/20
+981/981 [==============================] - 72s 73ms/step - loss: 0.2721 - accuracy: 0.9238 - val_loss: 0.0658 - val_accuracy: 0.9814
+Epoch 9/20
+981/981 [==============================] - 71s 72ms/step - loss: 0.2577 - accuracy: 0.9266 - val_loss: 0.0728 - val_accuracy: 0.9806
+Epoch 10/20
+981/981 [==============================] - 72s 73ms/step - loss: 0.2496 - accuracy: 0.9314 - val_loss: 0.0505 - val_accuracy: 0.9862
+Epoch 11/20
+981/981 [==============================] - 73s 74ms/step - loss: 0.2411 - accuracy: 0.9338 - val_loss: 0.1150 - val_accuracy: 0.9684
+Epoch 12/20
+981/981 [==============================] - 75s 77ms/step - loss: 0.2460 - accuracy: 0.9311 - val_loss: 0.0667 - val_accuracy: 0.9814
+Epoch 13/20
+981/981 [==============================] - 72s 73ms/step - loss: 0.2399 - accuracy: 0.9336 - val_loss: 0.0497 - val_accuracy: 0.9888
+Epoch 14/20
+981/981 [==============================] - 69s 70ms/step - loss: 0.2335 - accuracy: 0.9343 - val_loss: 0.0794 - val_accuracy: 0.9762
+Epoch 15/20
+981/981 [==============================] - 67s 68ms/step - loss: 0.2370 - accuracy: 0.9343 - val_loss: 0.0676 - val_accuracy: 0.9819
+Epoch 16/20
+981/981 [==============================] - 67s 68ms/step - loss: 0.2177 - accuracy: 0.9417 - val_loss: 0.0542 - val_accuracy: 0.9857
+Epoch 17/20
+981/981 [==============================] - 68s 69ms/step - loss: 0.2196 - accuracy: 0.9404 - val_loss: 0.1583 - val_accuracy: 0.9568
+Epoch 18/20
+981/981 [==============================] - 78s 80ms/step - loss: 0.2303 - accuracy: 0.9362 - val_loss: 0.0598 - val_accuracy: 0.9829
+Epoch 19/20
+981/981 [==============================] - 83s 85ms/step - loss: 0.2183 - accuracy: 0.9419 - val_loss: 0.0663 - val_accuracy: 0.9843
+Epoch 20/20
+981/981 [==============================] - 73s 74ms/step - loss: 0.2055 - accuracy: 0.9443 - val_loss: 0.0438 - val_accuracy: 0.9888
+
+
+\section{Cita bibliografias}
+\subsection{Páginas web}
+\subsubsection{Python} 
 
 \citep{kaggle_cnn_tutorial} : Un tutorial sobre una CNN en python
 
 \citep{conceptos_RN_DesdeCero} : Primera red neuronal que solo hace forwardpropagation
 
+\subsubsection{Redes neuronales}
+\subsubsection{Ciberseguridad}
 \subsection{Redes neuronales}
-\subsection{Ciberseguridad}
-\section{Redes neuronales}
 \citep{matich2001redes} ESPAÑOL 
 
 \citep{stamp2022artificial} : INLES habla de redes neuronales y ciberseguridad
 
 \citep{tang2007neural} : INGLES redes neuronales
-\subsection{Python}
+\subsubsection{Python}
 
 
 \citep{mirjalili2020python} : Tiene una lectura muy facil y conceptos bastante bien expresados y explicados. Es un libro muy práctico con bastantes ejemplos en python usando Scikit-learn y TensorFlow.
@@ -159,7 +327,7 @@ This is a test to prove the abstract's layout.This is a test to prove the abstra
 
 
 
-\section{Ciberseguridad}
+\subsection{Ciberseguridad}
 
 \cite{yagual2022revision} : ESPAÑOL, Analiza cuatro técnicas populares de redes neuronales y de aprendizaje profundo, en el contexto de la ciberseguridad : perceptrón multicapa (MLP), las redes neuronales convolucionales (CNN), las redes neuronales recurrentes (RNN) y el aprendizaje profundo por transferencia (DTL). Estas técnicas y sus modelos de seguridad híbridos pueden utilizarse para abordar de forma inteligente diferentes problemas de ciberdelitos, como la detección de intrusiones, el análisis de malware, el análisis de amenazas de seguridad, la predicción de ciberataques o anomalías, etc. 
 \begin{enumerate}
@@ -264,7 +432,7 @@ and Prevention System.
 \end{enumerate}
 
 
-\subsection{Python}
+\subsubsection{Python}
 
 
 
