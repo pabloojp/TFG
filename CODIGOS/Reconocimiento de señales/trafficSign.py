@@ -23,6 +23,7 @@ from sklearn.model_selection import train_test_split   # Importamos train_test_s
 from keras.utils import to_categorical                 # Importamos to_categorical para codificar las etiquetas en formato one-hot
 from keras.models import Sequential                    # Importamos Sequential, un modelo lineal para apilar capas de red neuronal
 from keras.layers import Conv2D, MaxPool2D, Dense, Flatten, Dropout  # Importamos capas específicas para construir una red neuronal convolucional
+import matplotlib.pyplot as plt
 
 
 # Definimos una función para cargar y procesar datos
@@ -33,19 +34,19 @@ def load_and_preprocess_data(data_directory):
 
     # Recorremos cada clase
     for i in range(classes):
-        path = os.path.join(data_directory, 'train', str(i))  # Construimos la ruta para cada clase
+        path = os.path.join(data_directory, 'Train', str(i))  # Construimos la ruta para cada clase
         images = os.listdir(path)                             # Listamos todas las imágenes en la carpeta de la clase
 
         # Recorremos cada imagen en la clase
         for a in images:
             try:
-                image = Image.open(path + '/' + a)   # Cargamos la imagen utilizando PIL
+                image = Image.open(os.path.join(path,  a))   # Cargamos la imagen utilizando PIL
                 image = image.resize((30, 30))       # Redimensionamos la imagen a 30x30 píxeles
                 image = np.array(image)              # Convertimos la imagen a un array de NumPy
                 data.append(image)                   # Agregamos la imagen a la lista de datos
                 labels.append(i)                     # Agregamos la etiqueta correspondiente a la lista de etiquetas
             except:
-                print("Error al cargar la imagen")
+                print("Error")
 
     data = np.array(data)      # Convertimos la lista de datos a un array de NumPy
     labels = np.array(labels)  # Convertimos la lista de etiquetas a un array de NumPy
@@ -127,7 +128,21 @@ if __name__ == "__main__":
     
     # Cargamos los datos
     data, labels = load_and_preprocess_data(data_directory)
-    
+     # Calcular la cantidad de datos por etiqueta
+    label_counts = np.bincount(labels)
+
+    # Crear un gráfico de barras con etiquetas
+    plt.bar(range(len(label_counts)), label_counts, tick_label=range(len(label_counts)))
+
+    # Agregar etiquetas con los números en cada barra
+    for i, count in enumerate(label_counts):
+        plt.text(i, count + 0.1, str(count), ha='center', va='bottom')
+
+    plt.xlabel('Etiquetas')
+    plt.ylabel('Cantidad de Datos')
+    plt.title('Cantidad de Datos por Etiqueta')
+    plt.show()
+'''
     # Dividimos los datos
     X_train, X_test, y_train, y_test = split_and_encode_data(data, labels)
     
@@ -136,3 +151,4 @@ if __name__ == "__main__":
     
     # Entrenamos el modelo y lo guardamos en un archivo
     train_model(model, 'traffic_classifier.keras', X_train, y_train, X_test, y_test, 32, 20)
+'''

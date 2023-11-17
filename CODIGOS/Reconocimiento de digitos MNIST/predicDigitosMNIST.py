@@ -1,7 +1,7 @@
 """
 Nombre del codigo: Modelo CNN reconocimiento de dígitos usando dataset MNIST.
 Guiado por: Tutorial de Kaggle (acceso al enlace el 10 de noviembre)
-        https://www.kaggle.com/code/yassineghouzam/introduction-to-cnn-keras-0-997-top-6/notebook
+        https://www.kaggle.com/code/kanncaa1/convolutional-neural-network-cnn-tutorial
 Alumno: Jiménez Poyatos, Pablo
 
 Script solo con el modelo. Nada de representación de datos ni nada. Además el codigo apilado en funciones.
@@ -30,6 +30,7 @@ np.random.seed(2)                                    # Al poner esto, haces que 
 
 # Función para cargar los datos
 def load_data(train_file, test_file):
+
     train = pd.read_csv(train_file)
     test = pd.read_csv(test_file)
 
@@ -37,6 +38,8 @@ def load_data(train_file, test_file):
     X_train = train.drop(labels=["label"], axis=1)   # Caracteristicas de entrada de cada ejemplo sin las etiquetas de cada ejemplo.
     del train
 
+
+    #Normalizamos los datos
     X_train = X_train / 255.0                        # Normalizamos los datos para regular la iluminacion (los pixeles tienen valores de 0 a 255) porque las CNN convergen más rápidamente con datos en el rango [0..1]
     test = test / 255.0
 
@@ -121,6 +124,8 @@ if __name__ == "__main__":
     # Cargar datos
     X_train, Y_train, test = load_data("train.csv", "test.csv")      # 42000 ejemplos de entrenamiento con 784 pixeles (imagenes 28x28). En train, las dimensiones son 42001 x 785 y 28000 ejemplos de test con 784 pixeles.
 
+    Y_train.value_counts()
+'''
     # Dividir datos
     X_train, X_val, Y_train, Y_val = split_data(X_train, Y_train)
 
@@ -135,4 +140,4 @@ if __name__ == "__main__":
 
     # Entrenar modelo
     train_model(model, datagen, X_train, Y_train, X_val, Y_val, epochs=20, batch_size=86)
-
+'''

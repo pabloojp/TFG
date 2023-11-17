@@ -16,12 +16,12 @@ from keras.models import load_model
 model = load_model('traffic_classifier.keras')
 
 # Cargar la imagen
-image_path = '14.png'
+image_path = 'prohib.jpg'
 image = Image.open(image_path)
 image = image.resize((30, 30))
 image = image.convert('RGB')
 image = np.array(image)
-image = image / 255.0  # Normalizar los valores de píxeles
+  # Normalizar los valores de píxeles
 
 # Realizar la predicción con el modelo cargado
 prediction = model.predict(np.array([image]))  # Asegurarse de que sea un arreglo de forma (1, 30, 30, 3)
@@ -76,11 +76,16 @@ clases = {
     42: 'Fin de la prohibición de adelantar vehículos de más de 3.5 toneladas'
 }
 
-
 # Obtener la etiqueta correspondiente a la clase predicha
 predicted_label = clases[predicted_class]
 
+probabilities = prediction[0]
+
 # Imprimir la etiqueta predicha
 print(f'Clase predicha: {predicted_label}')
+
+print('Probabilidades:')
+for i, prob in enumerate(probabilities):
+    print(f'{clases[i]}: {prob:.4f}')
 
 

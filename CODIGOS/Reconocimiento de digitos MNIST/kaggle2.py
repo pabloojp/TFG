@@ -138,6 +138,9 @@ model.fit(datagen.flow(X_train,Y_train, batch_size=batch_size), epochs = epochs,
 model.save('modelo_digitos.keras')
 
 '''
+
+plt.savefig(nombre)
+
 # Visualización de la matriz de confusión. Muestra la matriz de confusión con opciones para normalizar y personalizar el título y el mapa de colores.
 def plot_confusion_matrix(cm, classes, normalize=False, title='Matriz de confusión', cmap=plt.cm.Blues):
     plt.imshow(cm, interpolation='nearest', cmap=cmap)
@@ -159,6 +162,8 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Matriz de confusi
     plt.tight_layout()
     plt.ylabel('Etiqueta real')
     plt.xlabel('Etiqueta predicha')
+
+    
 
 
 # Predecir los valores del conjunto de validación
