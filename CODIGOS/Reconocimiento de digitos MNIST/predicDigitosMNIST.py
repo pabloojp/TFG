@@ -124,8 +124,6 @@ if __name__ == "__main__":
     # Cargar datos
     X_train, Y_train, test = load_data("train.csv", "test.csv")      # 42000 ejemplos de entrenamiento con 784 pixeles (imagenes 28x28). En train, las dimensiones son 42001 x 785 y 28000 ejemplos de test con 784 pixeles.
 
-    Y_train.value_counts()
-'''
     # Dividir datos
     X_train, X_val, Y_train, Y_val = split_data(X_train, Y_train)
 
@@ -140,4 +138,3 @@ if __name__ == "__main__":
 
     # Entrenar modelo
     train_model(model, datagen, X_train, Y_train, X_val, Y_val, epochs=20, batch_size=86)
-'''
